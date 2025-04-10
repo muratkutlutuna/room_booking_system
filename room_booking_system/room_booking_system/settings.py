@@ -23,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ud5cyqyxf(z1^esoeb1gqk@w@l!8pf!lp0)vf%82b$^#yj4g)n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -77,12 +76,13 @@ WSGI_APPLICATION = 'room_booking_system.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# filepath: /Users/muratkutlutuna/Documents/python_projects/room booking system/room_booking_system/room_booking_system/settings.py
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'room_booking_db',  # Name of your database
-        'USER': 'your_username',   # Your PostgreSQL username
-        'PASSWORD': 'your_password', # Your password
+        'NAME': 'room_booking_db',
+        'USER': 'postgres',
+        'PASSWORD': 'new_password',
         'HOST': 'localhost',
         'PORT': '5432',
     }

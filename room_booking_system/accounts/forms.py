@@ -1,5 +1,5 @@
 from django import forms
-from .models import Room  # Import your Room model
+from rooms.models import Room # Import your Room model
 from django.contrib.auth.models import User
 
 class UserRegisterForm(forms.ModelForm):
@@ -27,4 +27,4 @@ class RoomBookingForm(forms.ModelForm):
     """
     class Meta:
         model = Room
-        fields = ('room_name', 'start_time', 'end_time')
+        fields = ('room_number', 'start_time', 'end_time')
